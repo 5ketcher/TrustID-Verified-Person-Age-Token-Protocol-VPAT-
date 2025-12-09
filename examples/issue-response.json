@@ -1,0 +1,21 @@
+{
+  "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjIwMjUtMDEifQ.eyJpc3MiOiJodHRwczovL3RydXN0aWQuZXhhbXBsZSIsInN1YiI6InN1YmplY3QtNDg3ZmFhIiwiand0X2lkIjoiYWEyMmZmZCIsImlhdCI6MTczMzc0MTAwMCwiZXhwIjoxNzMzNzQxMzAwLCJyZWFsX3BlcnNvbiI6dHJ1ZSwiYWdlX2JyYWNrZXQiOiIxOCsiLCJhZ2VfMTNfcGx1cyI6dHJ1ZSwiYWdlXzE4X3BsdXMiOnRydWUsInRydXN0X2xldmVsIjozLCJsb2EiOiJzdWJzdGFudGlhbCIsInN1YmplY3RfdHlwZSI6InNvY2lhbF9hY2NvdW50IiwicGxhdGZvcm0iOiJmYWNlYm9vayIsImhhbmRsZSI6IkBqb2huX2RvZSIsImRldmljZV9jZXJ0aWZpZWQiOnRydWUsImRldmljZV90eXBlIjoiYW5kcm9pZCJ9.SIGNED_SIGNATURE",
+  "claims": {
+    "iss": "https://trustid.example",
+    "sub": "subject-487faa",
+    "jwt_id": "aa22ffd",
+    "iat": 1733741000,
+    "exp": 1733741300,
+    "real_person": true,
+    "age_bracket": "18+",
+    "age_13_plus": true,
+    "age_18_plus": true,
+    "trust_level": 3,
+    "loa": "substantial",
+    "subject_type": "social_account",
+    "platform": "facebook",
+    "handle": "@john_doe",
+    "device_certified": true,
+    "device_type": "android"
+  }
+}
