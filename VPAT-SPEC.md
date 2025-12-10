@@ -1,8 +1,8 @@
 
 # TrustID: Verified Person & Age Token Protocol (VPAT)
-**Draft Version:** 1.0  
+**Draft Version:** 1.1  
 **Status:** Experimental Specification  
-**Date:** 2025-12-09  
+**Date:** 2025-12-10  
 
 **Primary Author:**  
 **Vojtěch Sejkora**  
