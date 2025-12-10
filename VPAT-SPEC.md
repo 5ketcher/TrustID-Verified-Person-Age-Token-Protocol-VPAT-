@@ -308,9 +308,6 @@ age_over_21, verified_business_account, COSE tokens, device risk scoring.
 ---
 
 # 18. Change Log
-v1.0.1 (2025-12-10): Added Trust Policy Layer section, Policy Profiles,
-issuer metadata requirements, improved security requirements, and clarified
-device claim rules. No breaking changes to protocol structure.
 
 v1.0 (2025-12-09): First full specification.
 
