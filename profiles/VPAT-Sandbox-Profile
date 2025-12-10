@@ -1,0 +1,85 @@
+### VPAT-Sandbox-Profile (v1.0)
+**Status:** Testing & Development Profile  
+**Author:** Vojtěch Sejkora  
+**Date:** 2025-12-10  
+
+---
+
+# 1. Purpose
+This profile defines a fully permissive VPAT configuration intended for:
+
+- development environments  
+- QA testing  
+- integration pilot projects  
+- hackathons  
+- emulation of IdP behavior without real identities  
+
+It MUST NOT be used in production.
+
+---
+
+# 2. Allowed Identity Providers
+
+Any IdP MAY be used, including:
+
+- mock/testing IdPs  
+- local development servers  
+- simulated identity systems  
+- ephemeral IdPs created during testing  
+
+No compliance requirements apply.
+
+---
+
+# 3. Required Assurance Levels (IAL)
+
+No required IAL.  
+Test values are allowed, such as:
+
+- `"test-low"`  
+- `"test-medium"`  
+- `"mock"`  
+
+---
+
+# 4. Required Claims
+
+Tokens MUST include only:
+
+- `policy_profile = "vpat-sandbox-1.0"`  
+
+All other claims MAY be omitted, mocked, or randomly generated.
+
+---
+
+# 5. Cryptographic Requirements
+
+- Signing MAY use test keys  
+- JWKS MAY be static, local, or non-HTTPS  
+- IdP MAY use ephemeral or non-persistent keys  
+- No rotation requirements  
+
+---
+
+# 6. Revocation Requirements
+
+Revocation is OPTIONAL.  
+IdPs MAY simulate revocation behavior for testing purposes.
+
+---
+
+# 7. Relying Party Requirements
+
+Relying Parties MUST treat these tokens as **invalid for production**.  
+Use is restricted to controlled environments.
+
+---
+
+# 8. Version
+```
+policy_profile = "vpat-sandbox-1.0"
+```
+
+---
+
+# End of VPAT-Sandbox-Profile
