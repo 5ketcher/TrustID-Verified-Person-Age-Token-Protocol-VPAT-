@@ -100,7 +100,25 @@ Intended for:
 
 ---
 
-# 3. Core Principles
+# 3. Specification Governance
+
+The TrustID VPAT specification is currently maintained by its original
+author, **Vojtěch Sejkora**, as an open experimental standard.
+
+- The authoritative version of the specification is the one published at:  
+  https://github.com/5ketcher/TrustID-Verified-Person-Age-Token-Protocol-VPAT-
+
+- Proposed changes MAY be submitted as GitHub Issues or Pull Requests.
+
+- Normative changes (those that affect protocol behaviour, token
+  structure, required claims or security requirements) MUST be approved
+  by the author before they become part of an official version.
+
+- Stable versions are tagged and released as `vX.Y` or `vX.Y-draft` in
+  the repository and can be cited as such.
+
+--
+# 4. Core Principles
 
 1. Minimal Disclosure  
 2. Cryptographic Integrity  
@@ -110,7 +128,7 @@ Intended for:
 
 ---
 
-# 4. Identity Provider Internal Model (Private)
+# 5. Identity Provider Internal Model (Private)
 
 Internal structure example:
 
@@ -128,7 +146,7 @@ Internal structure example:
 
 ---
 
-# 5. Token Format
+# 6. Token Format
 
 ## Standard Claims
 iss, sub, iat, exp, jti, policy_profile.
@@ -160,7 +178,7 @@ of the core cryptographic validation.
 
 ---
 
-# 6. API Endpoints
+# 7. API Endpoints
 
 ### POST /tokens/issue/by-handle  
 Issues VPAT token.
@@ -173,7 +191,7 @@ Public keys.
 
 ---
 
-# 7. Token Lifetime Rules
+# 8. Token Lifetime Rules
 Short-lived (5 minutes).  
 Proof tokens up to 1 year.
 
@@ -181,7 +199,7 @@ Relying Parties SHOULD reject proof tokens with an expiration longer than 365 da
 
 ---
 
-# 8. Revocation Model  
+# 9. Revocation Model  
 revoked, expired, device_revoked.
 
 If an issuer becomes suspended or untrusted according to a Trust Policy,
@@ -189,7 +207,7 @@ Relying Parties MUST treat all its tokens as invalid regardless of signature val
 
 ---
 
-# 9. Security Requirements
+# 10. Security Requirements
 
 IdP must rotate keys, secure private keys, enforce TLS.  
 RP must validate signature & expiration.
@@ -200,10 +218,10 @@ Privacy rules apply.
 
 ---
 
-# 10. Threat Model
+# 11. Threat Model
 Mitigates botnets, synthetic identities, deepfakes, underage access, etc.
 
-# 10.1 Handling Untrusted or Hostile Issuers
+# 11.1 Handling Untrusted or Hostile Issuers
 
 The VPAT protocol does not restrict which entities may operate as
 Identity Providers (IdPs). This ensures global interoperability.
@@ -220,7 +238,7 @@ The protocol remains neutral while allowing strict governance at deployment time
 
 ---
 
-# 11. Trust Policy Layer (Issuer Governance)
+# 12. Trust Policy Layer (Issuer Governance)
 
 TrustID separates the technical protocol from trust decisions.  
 While the protocol defines how tokens are issued, structured and verified,
@@ -240,7 +258,7 @@ it supports any issuer, but allows RPs to enforce strict governance.
 
 ---
 
-# 12. Policy Profiles
+# 13. Policy Profiles
 
 A Trust Policy may define one or more **Profiles**, representing different
 assurance requirements, legal constraints, or ecosystem rules.
@@ -263,7 +281,7 @@ Relying Parties MUST evaluate this claim according to their configured Trust Pol
 
 ---
 
-# 13. Protocol Flows
+# 14. Protocol Flows
 
 ### Verification Flow:
 User → RP → IdP → RP (token) → IdP (verify)
@@ -273,23 +291,23 @@ RP → /verify-token → IdP
 
 ---
 
-# 14. Interoperability
+# 15. Interoperability
 Compatible with eIDAS2, BankID, national identity systems, FIDO2.
 
 ---
 
-# 15. Reference Implementation  
+# 16. Reference Implementation  
 This repository includes example payloads and flows under /examples/.
 The full Laravel backend implementation is separate.
 
 ---
 
-# 16. Future Extensions
+# 17. Future Extensions
 age_over_21, verified_business_account, COSE tokens, device risk scoring.
 
 ---
 
-# 17. Change Log
+# 18. Change Log
 v1.0.1 (2025-12-10): Added Trust Policy Layer section, Policy Profiles,
 issuer metadata requirements, improved security requirements, and clarified
 device claim rules. No breaking changes to protocol structure.
