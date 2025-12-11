@@ -2,7 +2,7 @@
 
 **Author:** Vojtěch Sejkora  
 **Status:** Experimental Open Standard  
-**Current Specification:** VPAT 1.0 Draft  
+**Current Specification:** VPAT 1.1 Draft  
 **License:** Apache License 2.0  
 
 ---
