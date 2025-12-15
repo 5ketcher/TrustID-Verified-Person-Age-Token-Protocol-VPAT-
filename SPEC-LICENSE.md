@@ -1,75 +1,85 @@
-# TrustID Specification License v1.0  
+# OpenVPT Specification Notice v1.0
 Author: **Vojtěch Sejkora (2025)**  
-Applies to: VPAT Specification & Profiles  
-Does NOT apply to: Software implementations (see Apache 2.0)
+Applies to: OpenVPT Specification & Policy Profiles  
+Does NOT apply to: Software implementations (see Apache License 2.0)
 
 ---
 
-## 1. Purpose  
-This license governs use of the TrustID specification and all associated
-documents, including VPAT-SPEC.md, policy profiles, architectural
-descriptions, claim definitions, token formats and protocol diagrams.
+## 1. Purpose
 
-The goal is to keep TrustID an open global standard while protecting the
-integrity, authorship, and consistency of the specification.
+This notice applies to the **OpenVPT (Open Verified Person Token)** specification
+and associated documentation, including:
+
+- OPENVPT-SPEC.md  
+- policy profiles  
+- architectural descriptions  
+- claim definitions  
+- token format documentation  
+- protocol diagrams  
+
+The purpose of this notice is to clarify authorship, scope, and governance
+intent for the OpenVPT specification while keeping the standard fully open
+and implementable.
 
 ---
 
-## 2. Allowed Uses  
-Under this license you MAY:
+## 2. License and Usage
 
-- Implement the TrustID protocol in any software (open-source or commercial).
+The OpenVPT specification is released under the **Apache License 2.0**.
+
+Under this license, you MAY:
+
+- Read, copy, and redistribute the specification text.
+- Implement the OpenVPT protocol in any software (open-source or commercial).
 - Reference, cite, and link to the specification.
-- Create documentation or educational material describing the protocol.
-- Build systems, services, and products that process VPAT-compliant tokens.
+- Create documentation, analysis, or educational material based on OpenVPT.
+- Publish derivative works, provided license terms are respected.
+
+Attribution to the original author is required by the license.
 
 ---
 
-## 3. Restricted Uses  
-You MAY NOT, without explicit written permission from the author:
+## 3. Integrity and Naming
 
-- Copy, modify, fork, or republish the specification or its structure.
-- Create competing or derivative identity specifications based on VPAT.
-- Use the names "TrustID", "TrustID Protocol", or "VPAT" for any
-  non-compliant or alternative specification.
-- Publish modified versions of the TrustID specification.
-- Use large sections of text, tables, diagrams, terminology, or claim
-  definitions in your own standard.
+To preserve clarity and interoperability within the ecosystem:
 
-These restrictions protect the core design and prevent fragmentation.
+- The name **"OpenVPT"** refers to this specification as published
+  in the official repository.
+- The term **Verified Person & Age Token (VPT)** refers to the token format
+  defined by this specification.
 
----
+Implementations and extensions SHOULD clearly indicate compatibility
+(e.g. *"OpenVPT-compatible"*) and SHOULD NOT misrepresent modified or
+incompatible specifications as official OpenVPT releases.
 
-## 4. Independence Clause  
-Independent original designs that do not copy the TrustID specification
-are NOT restricted by this license.
+This notice is intended to prevent confusion, not to restrict innovation.
 
 ---
 
-## 5. Governance  
-The authoritative specification is maintained in the GitHub repository:
+## 4. Governance
 
-https://github.com/5ketcher/TrustID-Verified-Person-Age-Token-Protocol-VPAT-
+The authoritative version of the OpenVPT specification is maintained at:
 
-Only the author may approve new versions until a formal governance
-body is established.
+https://github.com/5ketcher/openvpt-standard
 
----
+Until a formal governance or standardization body is established,
+the specification is curated by the original author.
 
-## 6. Trademarks  
-The terms "TrustID", "TrustID Protocol" and "VPAT" are protected under
-this license. They may be used only to reference the official standard.
+This governance statement does not limit independent implementations
+or community discussion.
 
 ---
 
-## 7. Relationship With Apache 2.0  
-Software implementations of TrustID are governed by the Apache License
-2.0 and remain fully open and permissive.
+## 5. Relationship With Apache License 2.0
 
-This specification license applies ONLY to the text and structure of the
-protocol definition.
+- The **Apache License 2.0** governs both the specification text and all
+  software implementations.
+- This notice provides clarification only and does not override or
+  restrict the rights granted by the Apache License.
 
 ---
 
-## 8. Copyright  
-© 2025, **Vojtěch Sejkora**. All rights reserved.
+## 6. Copyright
+
+© 2025 **Vojtěch Sejkora**  
+Released under the Apache License 2.0.
