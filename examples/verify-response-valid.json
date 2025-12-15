@@ -2,16 +2,18 @@
   "status": "valid",
   "reason": "Token is cryptographically valid and active.",
   "claims": {
-    "iss": "https://trustid.example",
+    "iss": "https://openvpt.example",
     "sub": "subject-487faa",
+    "jti": "aa22ffd",
+    "policy_profile": "openvpt-global-1.0",
+    "real_person": true,
     "age_bracket": "18+",
-    "real_person": true
+    "trust_level": 3,
+    "assurance_level": "substantial"
   },
   "context": {
     "platform": "facebook",
     "handle": "@john_doe",
-    "real_person": true,
-    "age_bracket": "18+",
     "device_bound": true
   }
 }
