@@ -1,3 +1,24 @@
+> ⚠️ **DEPRECATED / LEGACY DOCUMENT**
+>
+> This document represents an **early experimental draft (v0.1)** of the protocol,
+> originally published under the working name **TrustID / VPAT**.
+>
+> The project has since been **renamed, refined, and structurally evolved**.
+> This document is preserved **for historical reference only**.
+>
+> 👉 **The current and authoritative specification is:**
+>
+> **OpenVPT — Verified Person & Age Token Protocol (VPT)**  
+> `/OPENVPT-SPEC.md`
+>
+> **Do not use this document for new implementations.**
+> Implementers, reviewers, and auditors MUST refer to the OpenVPT specification instead.  
+  
+**Legacy status:** Superseded by OpenVPT 1.0+  
+**Successor:** OpenVPT — Verified Person & Age Token Protocol
+
+---
+
 # TrustID: Verified Person & Age Token Protocol (VPAT)
 **Draft Version:** 0.1  
 **Status:** Experimental Draft  
