@@ -1,8 +1,10 @@
 {
   "status": "revoked",
-  "reason": "The proof has been revoked due to security concerns.",
+  "reason": "The token has been revoked by the issuer.",
   "claims": {
-    "iss": "https://trustid.example",
-    "sub": "subject-487faa"
+    "iss": "https://openvpt.example",
+    "sub": "subject-487faa",
+    "jti": "aa22ffd",
+    "policy_profile": "openvpt-global-1.0"
   }
 }
