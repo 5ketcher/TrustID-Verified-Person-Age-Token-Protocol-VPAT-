@@ -1,4 +1,4 @@
-# OpenVPT (Open Verified Person & Age Token)
+# OpenVPT™ (Open Verified Person & Age Token)
 
 **Author:** Vojtěch Sejkora  
 **Status:** Public Documentation  
